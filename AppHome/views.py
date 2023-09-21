@@ -82,6 +82,7 @@ class IndexView(View):
                             folders = Folder.objects.filter(parent__isnull=True, is_del=False)
                             files = File.objects.filter(parent__isnull=True, is_del=False)
                             parent_rec_id = ''
+                            parent_obj = None
 
                         context = {
                             'folders': folders,

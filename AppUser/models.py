@@ -12,5 +12,4 @@ from django.db import models
 class CustomUser(AbstractUser):
     phone_number = models.CharField(max_length=15, null=True, blank=True)
     address = models.CharField(max_length=500, null=True, blank=True)
-    # type = models.CharField(choices=type_choices)
 
